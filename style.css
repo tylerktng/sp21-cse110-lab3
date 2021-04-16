@@ -1,0 +1,54 @@
+/*
+Color
+*/
+body {
+    color: rgb(255, 255, 155);;
+    background-color: rgb(20, 22, 34);
+    margin: auto;
+    position: static;
+}
+
+h1 {
+    color: rgb(243, 130, 130);
+    border-style: solid;
+    border-color: rgb(255, 255, 155);
+    border-width: 0.15em;
+    border-radius: 0%;
+    text-decoration: underline;
+    text-align: center;
+    margin: 0.25lh 0.25lh 0.25lh 0.25lh;
+    padding: 1px 1px 1px 1px;
+}
+
+h2 {
+    color: orange;
+    display: block;
+}
+h3 {
+    color: rgb(142, 255, 142);
+}
+
+p {
+    text-align: left;
+    display:inline-block;
+}
+h2:hover {
+    color: red;
+}
+
+section {
+    background-color: rgb(58, 58, 80);
+    border-radius: 10mm;
+    padding: 1cm 1cm 1cm 1cm
+}
+
+video {
+    display: block;
+    height: 640px;
+    width: 480px;
+    position: relative;
+}
+
+a:active {
+    color: lime;
+}
