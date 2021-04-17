@@ -1,10 +1,14 @@
 /*
 Color
 */
+
+* {
+    margin: auto;
+}
+
 body {
     color: rgb(255, 255, 155);;
     background-color: rgb(20, 22, 34);
-    margin: auto;
     position: static;
 }
 
@@ -43,12 +47,37 @@ section {
 }
 
 video {
-    display: block;
+    display: inline;
     height: 640px;
     width: 480px;
     position: relative;
 }
-
+p ~ p {
+    color: white;
+}
 a:active {
     color: lime;
 }
+body hr {
+    color: green;
+}
+audio + p {
+    color: gray;
+}
+
+#day2 {
+    color: magenta;
+}
+
+[attribute=bold] {
+    font-weight: bold;
+}
+
+/* div.media {
+    display:flex;
+    flex-direction: column;
+} */
+
+/* div.media > video {
+    flex-grow: 1;
+} */
