@@ -10,6 +10,15 @@ body {
     color: rgb(255, 255, 155);;
     background-color: rgb(20, 22, 34);
     position: static;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+header {
+    background-color: rgb(114, 114, 160);
+    width: 100%;
 }
 
 h1 {
@@ -46,10 +55,11 @@ section {
     padding: 1cm 1cm 1cm 1cm
 }
 
+
 video {
     display: inline;
-    height: 640px;
-    width: 480px;
+    width: 768px;
+    height: 432px;
     position: relative;
 }
 p ~ p {
@@ -73,11 +83,63 @@ audio + p {
     font-weight: bold;
 }
 
-/* div.media {
+div.media {
     display:flex;
+    align-items: flex-start;
     flex-direction: column;
-} */
+    justify-content: flex-start;
 
-/* div.media > video {
+}
+
+div.media > * {
     flex-grow: 1;
-} */
+    align-self: stretch;
+    width:100%;
+}
+
+div.media > video {
+    align-self: flex-start;
+    object-fit: scale-down;
+    flex-basis: auto;
+    flex-grow: 0;
+}
+
+#new-entry  {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+}
+#new-entry > #entry {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    width:95%;
+}
+#new-entry > #entry > div > textarea {
+    width:100%;
+}
+
+#new-entry > #type {
+    grid-column: 1/1;
+    grid-row: 2/2;
+}
+
+#new-entry > #options {
+    grid-column: 2/2;
+    grid-row:2/2;
+}
+
+#new-entry > #date {
+    grid-column: 1/1;
+    grid-row:3/3;
+}
+
+#new-entry > #submit {
+    grid-column: 2/2;
+    grid-row: 3/3;
+}
+
+#new-journal-header {
+    text-align: center;
+}

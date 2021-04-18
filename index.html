@@ -36,21 +36,26 @@
                     From now on I will no longer be using an ordered list for highlights in a day and instead compressing content into these <em>sections</em>, aka paragraphs since its more convenient.  
                 </p><br/>
                 <p>I recently dug out this audio file from the depths of my hard disk.</p>
+                <br>
                 <div class = "media">
                     <details>
                         <summary>Click here for the name.</summary>
                         Edvard Grieg - <i>Peer Gynt, Suite No. 1, Op. 46: In the Hall of the Mountain King</i>
                     </details>
                     <audio controls src="hallofmountainking.mp3">no support for audio :(</audio>
-                    <p>This music is royalty free, by the way.</p>
+
+                    <p>This music is royalty free, by the way. Also, I hate CSS.</p>
+
+                    <p>Here is also a video clip from my Fall quarter.</p>
+                
+                    <video controls width="768px" height="432px" >
+                        <source src="ezzati.mp4" type="video/mp4">
+                        ezatti.mp4
+                    </video>
                 </div>
 
 
-                <p>Here is also a video clip from my Fall quarter.</p>
-                <video controls width=640 height=480>
-                    <source src="ezzati.mp4" type="video/mp4">
-                    ezatti.mp4
-                </video>
+                
             </section>
             <hr>
             <section id="day3">
@@ -61,20 +66,23 @@
             </section>
             <hr>
             <div>
-                <h2>New Journal Entry</h2>
+                <h2 id="new-journal-header">New Journal Entry</h2>
                 <form id="new-entry">
-                    <fieldset>
+                    <fieldset id="entry">
                         <legend>Entry</legend>
-                        <textarea id="entry" name="entry" rows="5" cols="64"></textarea>
+                        <div>
+                            <textarea id="entry" name="entry"></textarea>
+
+                        </div>
                     </fieldset>
-                    <fieldset>
+                    <fieldset id="type">
                         <legend>Type</legend>
                         <input type="radio" id="normal" name="type">    
                         <label for="normal">Normal Entry</label>
                         <input type="radio" id="custom" name="type">    
                         <label for="custom">Custom Entry</label>
                     </fieldset>
-                    <fieldset>
+                    <fieldset id="options">
                         <legend>Options</legend>
                         <label for="anon">Anonymous</label>
                         <input type="checkbox" id="anon">
@@ -92,11 +100,11 @@
                             <option value="journal">journal</option>
                         </datalist>
                     </fieldset>
-                    <div>
+                    <div id="date">
                         <label for="date">Date:</label>
                         <input type="date" id="date">
                     </div>
-                    <div>
+                    <div id="submit">
                         <input type="button" value="Submit">
                     </div>
                 </form>
