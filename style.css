@@ -5,79 +5,169 @@ Color
 * {
     margin: auto;
 }
+@media (prefers-color-scheme: dark) {
+    body {
+        color: rgb(255, 255, 155);;
+        background-color: rgb(20, 22, 34);
+        position: static;
+        margin-top: 2px;
+        margin-bottom: 1px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
 
-body {
-    color: rgb(255, 255, 155);;
-    background-color: rgb(20, 22, 34);
-    position: static;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-}
+    header {
+        background-color: rgb(114, 114, 160);
+        width: 100%;
+    }
 
-header {
-    background-color: rgb(114, 114, 160);
-    width: 100%;
-}
+    h1 {
+        color: rgb(243, 130, 130);
+        border-style: solid;
+        border-color: rgb(255, 255, 155);
+        border-width: 0.15em;
+        border-radius: 0%;
+        text-decoration: underline;
+        text-align: center;
+        margin: 0.25lh 0.25lh 0.25lh 0.25lh;
+        padding: 1px 1px 1px 1px;
+    }
 
-h1 {
-    color: rgb(243, 130, 130);
-    border-style: solid;
-    border-color: rgb(255, 255, 155);
-    border-width: 0.15em;
-    border-radius: 0%;
-    text-decoration: underline;
-    text-align: center;
-    margin: 0.25lh 0.25lh 0.25lh 0.25lh;
-    padding: 1px 1px 1px 1px;
-}
+    h2 {
+        color: orange;
+        display: block;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    h3 {
+        color: rgb(142, 255, 142);
+    }
 
-h2 {
-    color: orange;
-    display: block;
-}
-h3 {
-    color: rgb(142, 255, 142);
-}
+    p {
+        text-align: left;
+        display:inline-block;
+    }
+    h2:hover {
+        color: red;
+    }
 
-p {
-    text-align: left;
-    display:inline-block;
-}
-h2:hover {
-    color: red;
-}
-
-section {
-    background-color: rgb(58, 58, 80);
-    border-radius: 10mm;
-    padding: 1cm 1cm 1cm 1cm
-}
+    section {
+        background-color: rgb(58, 58, 80);
+        border-radius: 10mm;
+        padding-left: 1cm;
+        padding-top: 0.5cm;
+        padding-bottom: 0.5cm;
+        padding-right: 1cm;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
 
 
-video {
-    display: inline;
-    width: 768px;
-    height: 432px;
-    position: relative;
-}
-p ~ p {
-    color: white;
-}
-a:active {
-    color: lime;
-}
-body hr {
-    color: green;
-}
-audio + p {
-    color: gray;
-}
+    video {
+        display: inline;
+        width: 768px;
+        height: 432px;
+        position: relative;
+    }
+    p ~ p {
+        color: white;
+    }
+    a:active {
+        color: lime;
+    }
+    body hr {
+        color: rgb(255, 255, 155);
+    }
+    audio + p {
+        color: gray;
+    }
 
-#day2 {
-    color: magenta;
+    #day2 {
+        color: magenta;
+    }
 }
+@media (prefers-color-scheme: light) {
+    body {
+        color: rgb(0, 0, 0);
+        background-color: rgb(159, 174, 255);
+        position: static;
+        margin-top: 2px;
+        margin-bottom: 1px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    
+    header {
+        background-color: rgb(200, 200, 230);
+        width: 100%;
+    }
+    
+    h1 {
+        color: rgb(104, 42, 42);
+        border-style: solid;
+        border-color: rgb(0, 0, 0);
+        border-width: 0.15em;
+        border-radius: 0%;
+        text-decoration: underline;
+        text-align: center;
+        margin: 0.25lh 0.25lh 0.25lh 0.25lh;
+        padding: 1px 1px 1px 1px;
+    }
+    
+    h2 {
+        color: rgb(59, 39, 0);
+        display: block;
+        font-family: 'Ubuntu', sans-serif;
+
+    }
+    h3 {
+        color: rgb(35, 63, 35);
+    }
+    
+    p {
+        text-align: left;
+        display:inline-block;
+    }
+    h2:hover {
+        color: rgb(98, 8, 8);
+    }
+    
+    section {
+        background-color: rgb(213, 213, 255);
+        border-radius: 10mm;
+        padding-left: 1cm;
+        padding-top: 0.5cm;
+        padding-bottom: 0.5cm;
+        padding-right: 1cm;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        max-width: 80%;
+        min-width: 70%;
+    }
+    
+    
+    video {
+        display: inline;
+        width: 768px;
+        height: 432px;
+        position: relative;
+    }
+    p ~ p {
+        color: rgb(0, 0, 0);
+    }
+    a:active {
+        color: rgb(9, 68, 9);
+    }
+    body hr {
+        color: rgb(59, 59, 42);
+    }
+    audio + p {
+        color: gray;
+    }
+    
+    #day2 {
+        color: rgb(61, 0, 61);
+    }
+    }
 
 [attribute=bold] {
     font-weight: bold;
